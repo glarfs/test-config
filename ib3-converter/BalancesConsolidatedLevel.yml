@@ -1,0 +1,14 @@
+request:
+  process: BalancesConsolidatedLevel
+  task: start
+response:
+  -
+    name: Account
+    base: IBTables/TblV3.It/[TblId=Grid1]/TblRow*
+    fields:
+     - type: RowV31.ItRowCell/CellV31.It/[CellCol=1]/CellTxt
+  -
+    name: Company
+    base: IBTables/TblV3.It/[TblId=Grid1]/TblRow*
+    fields:
+     - type: RowV31.ItRowCell/CellV31.It/[CellCol=1]/CellTxt
